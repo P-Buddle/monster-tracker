@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/monster-tracker/static/css/main.00470e8d.css",
+    "main.js": "/monster-tracker/static/js/main.d3d8385e.js",
+    "static/js/787.085f0add.chunk.js": "/monster-tracker/static/js/787.085f0add.chunk.js",
+    "index.html": "/monster-tracker/index.html",
+    "main.00470e8d.css.map": "/monster-tracker/static/css/main.00470e8d.css.map",
+    "main.d3d8385e.js.map": "/monster-tracker/static/js/main.d3d8385e.js.map",
+    "787.085f0add.chunk.js.map": "/monster-tracker/static/js/787.085f0add.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00470e8d.css",
+    "static/js/main.d3d8385e.js"
+  ]
+}
