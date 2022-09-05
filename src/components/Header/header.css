@@ -1,0 +1,15 @@
+.container {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: black;
+    color: var(--main-bg-color);
+  }
+
+  .header-icon {
+    display: inline;
+    float: right;
+    margin-right: 25px;
+  
+    font-size: 80px;
+    color: #424242;
+  }

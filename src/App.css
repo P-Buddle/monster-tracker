@@ -1,38 +1,213 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root {
+  --main-bg-color: rgb(226, 226, 226);
+  --main-bg-color-var: rgb(151, 151, 151);
+  --primary-color: rgb(219, 5, 5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--main-bg-color);
+  font-family: 'Krona One', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-selector {
+  float: right;
+  margin-right: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.monster-selector-container {
+  margin: 0rem 2rem 0rem;
+  padding: 0.4rem;
+  
+  display: grid;
+  width: 350px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.monster-button-container {
+  padding: 0.5rem;
+}
+
+.results-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.monster-container {
+  color: var(--main-bg-color);
+  background-color: rgb(0, 0, 0);
+  height: 360px;
+  width: auto;
+  padding-top: 0.1rem;
+  padding-left: 1.2rem;
+  margin: 0.2rem;
+  border-radius: 15px;
+}
+
+.dmg-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+ 
+  padding: 10px 15px 20px 2px;
+  margin-top: 5px;
+  
+}
+
+.condition-box {
+  margin: 20px;
+}
+
+.diceroll {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  text-align: left;
+}
+
+.btn-attack-roll {
+  background-color: transparent;
+  float: left;
+}
+
+.btn-attack-roll:hover{
+  opacity: 0.5;
+}
+
+
+img {
+  width: 100%;
+  filter: invert(100%);
+  float: left;
+}
+
+.sword {
   color: white;
+  font-size: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  margin-right: 0.7rem;
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 200px;
+  margin-bottom: 0.4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.inflict-label {
+  width: 60px;
+}
+
+input {
+  font-family: 'Krona One', sans-serif;
+}
+
+textarea {
+  font-family: 'Krona One', sans-serif;
+}
+
+input[type=text] {
+  display: inline-block;
+  float: left;
+  width: 100px;
+}
+
+input[type=number] {
+  display: inline-block;
+  float: left;
+  width: 40px;
+}
+
+.highlight{
+  display: inline;
+  color: var(--primary-color);
+}
+
+h3{
+  color: var(--main-bg-color-var);
+}
+.dead {
+  color: var(--primary-color);
+}
+
+.icons {
+  display: inline;
+  float: right;
+  margin-right: 25px;
+  font-size: 50px;
+  color: #424242;
+}
+
+.btn {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 5rem;
+  font-family: 'Krona One', sans-serif;
+  background-color: #424242; /* Green */
+  border: white;
+  border-style: groove;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  font-size: 13px;
+  transition: 300ms;
+}
+
+.btn:hover{
+  background-color: var(--primary-color);
+}
+
+.btn-small {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  font-family: 'Krona One', sans-serif;
+  background-color: var(--primary-color);
+  border: white;
+  border-style: groove;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  transition: 300ms;
+}
+
+.btn-small:hover {
+  background-color: rgb(247, 95, 95);
+  color: black;
+  border-color: beige;
+}
+
+
+@media only screen and (max-width: 1300px)  {
+  .results-container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 920px)  {
+  .results-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 650px)  {
+  .results-container {
+    grid-template-columns: 1fr;
+  }
+  .form-selector {
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  input[type=text] {
+    width: 150px;
   }
 }
